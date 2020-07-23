@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: '<rytr823@gmail.com>',
-          bcc: "rytr823@gmail.com",
-          reply_to: 'rytr823@gmail.com'
+  default from: ENV['EMAIL_HIDDEN'],
+          bcc: ENV['EMAIL_HIDDEN'],
+          reply_to: ENV['EMAIL_HIDDEN']
   layout 'mailer'
 end
